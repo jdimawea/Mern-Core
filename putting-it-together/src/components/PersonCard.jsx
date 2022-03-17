@@ -16,13 +16,11 @@ class PersonCard extends Component {
         const { firstName, lastName, hairColor } = this.props;
 
         return (
-        <div className="card">
-            <div className="content">
-                <h2>{lastName}, {firstName}</h2>
-                <p>Age: {this.state.age}</p>
-                <p>Hair Color: {hairColor}</p>
-                <button className="birthday-button" onClick={this.birthday}>Birthday Button for {firstName} {lastName}</button> 
-            </div>
+        <div>
+            <h2>{lastName}, {firstName}</h2>
+            <p>Age: {this.state.age}</p>
+            <p>Hair Color: {hairColor}</p>
+            <button onClick={this.birthday}>Birthday Button for {firstName} {lastName}</button> 
         </div>
         )
     }
