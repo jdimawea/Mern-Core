@@ -39,11 +39,11 @@ app.get("/api/companies/new", (req, res) => {
 })
 
 app.get("/api/user/company", (req, res) => {
-    res.json({ user: new User(), company: new Company() });
+    res.json({user: new User(),company: new Company()});
 })
 
 app.get("/api", (req, res) => {
-    res.json("Welcome to the Faker API")
+    res.json("Hello There!")
 })
 
 
