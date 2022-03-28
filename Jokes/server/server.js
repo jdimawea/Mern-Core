@@ -11,10 +11,11 @@ require('./configs/mongoose.config')
 app.use(express.json(), express.urlencoded({ extended: true }));
 
 
-// get the routes
+// -----------------get the routes----------------------
 // option 1
 // const Routes = require('./routes/jokes.routes')
 // Routes(app)
+
 // option 2
 require('./routes/jokes.routes')(app)
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Test Connection to the database
-mongoose.connect('mongodb://localhost/jokes_db', {
+mongoose.connect('mongodb+srv://root:root@jokes.ufiai.mongodb.net/jokesDB?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

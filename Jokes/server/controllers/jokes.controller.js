@@ -2,7 +2,7 @@
 const { Joke } = require("./../models/jokes.model")
 
 //-------------- They are functions! ---------------
-// The 
+// The logic of the operation
 // get all
 module.exports.allJokes = (req, res) => {
     Joke.find()
@@ -12,7 +12,7 @@ module.exports.allJokes = (req, res) => {
 
 // get one 
 module.exports.oneJoke = (req, res) => {
-    Joke.findOne({ _id: req.params.id })
+    Joke.findOne({ _id: req.params.id }) // parameter to find by id
         .then(oneJoke => res.json({ joke: oneJoke })) // successfull response
         .catch(err => res.json({ message: 'Ooops', error: err })) // unsuccessfull response
 }
